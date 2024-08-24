@@ -1,0 +1,18 @@
+# User-specific configuration files
+Source.conmgr
+Stage.conmgr
+DWH.conmgr
+
+# Ignore the entire directory if needed (optional)
+# *.conmgr
+
+# Other common Visual Studio ignores
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.pdb
+*.obj
+bin/
+obj/
