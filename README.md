@@ -5,6 +5,9 @@ This project aims to build an Internet Sales Data Mart by extracting, transformi
 Data source can be downloaded from here! [AdventureWorks2019.bak](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2019.bak)
 
 ## Internet Sales Diagram
-![Scheenshot](data mapping/InternetSales_Diagram.png)
+![Screenshot](data-mapping/InternetSales_Diagram.png)
 
-##
+## Data Mapping 
+![Screenshot](data-mapping/CustomerMapping.png)
+
+<p align="center"> Mapping Customer Source and Customer Destination (DimCustomer) </p>
