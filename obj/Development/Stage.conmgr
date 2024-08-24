@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Stage"
+  DTS:DTSID="{D7C258E3-9A50-442B-B771-65687C23FB4A}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-LUDOCHI\SERVER2;User ID=sa;Initial Catalog=DWH_Demo_AdventureW_Staging;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-AdventureWork_DWH-{D7C258E3-9A50-442B-B771-65687C23FB4A}DESKTOP-LUDOCHI\SERVER2.DWH_Demo_AdventureW_Staging.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABTcCDRMo8EavELCGDhz58QAAAAACAAAAAAAQZgAAAAEAACAAAAD+dEVhumkz2kIwNjEs3cMwSOGVHZ920lpER0dXcXa5QwAAAAAOgAAAAAIAACAAAAAsm5S/vTVRs8D/q4VzcP/Q2lyVLNTM3cGVrA/tX9SmYHAAAAC0+vdeSWfbIhYGjZF3wQyGX3fWfvQA819JUW0j4I2CLNR8tQMKVp+NnyIY44TcKCwktvjVAmp2tn71kVKT7g3Pffzk25GT5Od7EWTR/1lPsCn0Cmf1HYiz6bhh7hmGx/DVR8H/6EvvwKwy+/c1lKmbQAAAAKHSj92TLz6qqv2nK3s3UcJq6ruRfvIJzomim8ytZAn9mr57G1W8lcPxoFQ4VxWZ3gfvsHMzS/q4AJ518izElzw=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Source"
+  DTS:DTSID="{A4FA9030-2634-468F-92A2-E926265B819B}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-LUDOCHI\SERVER2;User ID=sa;Initial Catalog=AdventureWorks2019;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-AdventureWork_DWH-{A4FA9030-2634-468F-92A2-E926265B819B}DESKTOP-LUDOCHI\SERVER2.AdventureWorks2019.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABTcCDRMo8EavELCGDhz58QAAAAACAAAAAAAQZgAAAAEAACAAAAAWGLu78uEsS9yRdtYkeMPe7JWSYyQSACaXrHK3OgQM5AAAAAAOgAAAAAIAACAAAABrHrn/SpW0wp1OufN57Avrcx/TIf0/G8rwpvwJQ8G863AAAAD/0eC8ZFt5eJyybOWNGOwojNNmX8idzMFLAXOhgnX1f9WJqIr5pza5DG5HEMhLxZ3kBytGFjiTQgfVKtoBg07oXcRY2ViXzJ21IQgelVTeyoHNwWGi++ULlvphJDkWQr4RhG3MBY94dwDs+z12676fQAAAAMOrF6sTwL7acvwSP2OxSmlpE9ColtZbEBS8nA+qqBg7juo5r136iE/ZpSpeHBpOJ+N/+djRU9FI22ey4z8WMqA=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
