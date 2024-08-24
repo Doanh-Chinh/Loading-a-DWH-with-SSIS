@@ -153,7 +153,7 @@ GO
 
 --Populate Date dimension
 
-TRUNCATE TABLE DimDate
+--TRUNCATE TABLE DimDate
 
 --IF YOU ARE USING THE YYYYMMDD format for the primary key then you need to comment out this line.
 --DBCC CHECKIDENT (DimDate, RESEED, 60000) --In case you need to add earlier dates later.

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimEmployee"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{3F6C64EA-4398-4D5B-BDBB-E29EE685D3D0}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{45B2D655-2B53-4BA3-9CE8-9FF63605E52D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -1344,13 +1344,13 @@ left join Person.EmailAddress ea
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Insert Inferred Member"
+      DTS:refId="Package\Insert Unkown Member"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{90100454-545E-4FA1-9DEE-3C67DF3D48CE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Insert Inferred Member"
+      DTS:ObjectName="Insert Unkown Member"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -1365,7 +1365,7 @@ left join Person.EmailAddress ea
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{9481C791-B0B7-4865-8678-51EC104B8C7C}"
-      DTS:From="Package\Insert Inferred Member"
+      DTS:From="Package\Insert Unkown Member"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Data Flow Task" />
@@ -1383,39 +1383,39 @@ left join Person.EmailAddress ea
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\Insert Inferred Member"
-          TopLeft="60.714286748244,97.8823543139395" />
-        <NodeLayout
           Size="150.4,41.6"
           Id="Package\Data Flow Task"
           TopLeft="100.00000170299,178.941178980171" />
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Insert Unkown Member"
+          TopLeft="60.714286748244,97.8823543139395" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="155.114286748244,139.48235431394">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.085714954746,39.4588246662312"
+              EndConnector="20.085714954746,39.4588246662315"
               Start="0,0"
-              End="20.085714954746,31.9588246662312">
+              End="20.085714954746,31.9588246662315">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.7294123331156" />
+                    End="0,15.7294123331157" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.7294123331156"
-                    Point2="0,19.7294123331156"
-                    Point3="4,19.7294123331156" />
+                    Point1="0,15.7294123331157"
+                    Point2="0,19.7294123331157"
+                    Point3="4,19.7294123331157" />
                   <mssgle:LineSegment
-                    End="16.085714954746,19.7294123331156" />
+                    End="16.085714954746,19.7294123331157" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.085714954746,19.7294123331156"
-                    Point2="20.085714954746,19.7294123331156"
-                    Point3="20.085714954746,23.7294123331156" />
+                    Point1="16.085714954746,19.7294123331157"
+                    Point2="20.085714954746,19.7294123331157"
+                    Point3="20.085714954746,23.7294123331157" />
                   <mssgle:LineSegment
-                    End="20.085714954746,31.9588246662312" />
+                    End="20.085714954746,31.9588246662315" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1658,14 +1658,6 @@ left join Person.EmailAddress ea
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Slowly Changing Dimension">
     <Properties>
       <Property>
@@ -1750,6 +1742,14 @@ left join Person.EmailAddress ea
   &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
   &lt;EnableInferredSupport&gt;false&lt;/EnableInferredSupport&gt;
 &lt;/SCDWizardMetadata&gt;</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

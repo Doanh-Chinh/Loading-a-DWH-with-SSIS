@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="24"
-  DTS:VersionGUID="{6D6D0F78-B9ED-44F7-91DC-BD826D6E4535}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{4AE3D262-BB5D-4E7F-B5E1-4611C8EC9B23}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -661,13 +661,13 @@ from Sales.SpecialOffer</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Insert Inferred Member"
+      DTS:refId="Package\Insert Unkown Member"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{6C18A272-1CC5-4E82-AFF6-F25087FC16A3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Insert Inferred Member"
+      DTS:ObjectName="Insert Unkown Member"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -682,7 +682,7 @@ from Sales.SpecialOffer</property>
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{1EEEF2B1-8CD2-4DED-A7E7-C3757868FE1A}"
-      DTS:From="Package\Insert Inferred Member"
+      DTS:From="Package\Insert Unkown Member"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Data Flow Task" />
@@ -705,11 +705,11 @@ from Sales.SpecialOffer</property>
           TopLeft="149.285716828035,143.000002005521" />
         <NodeLayout
           Size="188.8,41.6"
-          Id="Package\Insert Inferred Member"
+          Id="Package\Insert Unkown Member"
           TopLeft="135.714288025486,50.4705889431251" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="227.300002426761,92.070588943125">
+          TopLeft="227.300002426761,92.0705889431251">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -849,7 +849,7 @@ from Sales.SpecialOffer</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -859,7 +859,7 @@ from Sales.SpecialOffer</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -1,0 +1,1 @@
+select PromotionAK from DimPromotion

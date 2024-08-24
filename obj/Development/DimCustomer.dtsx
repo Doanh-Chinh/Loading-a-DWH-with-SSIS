@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="DimCustomer"
   DTS:PackageType="5"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{F6A58242-B1E5-4210-8A8B-64E225834993}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{93E244E7-D7D4-433F-824E-F25D9B11F75B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -617,13 +617,13 @@ where (ea.ModifiedDate &gt; ?
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Insert Inferred Member"
+      DTS:refId="Package\Insert Unkown Member"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{7CBD30A1-62BF-497C-A303-F02BE67BDC3C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Insert Inferred Member"
+      DTS:ObjectName="Insert Unkown Member"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -693,7 +693,7 @@ where (ea.ModifiedDate &gt; ?
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{262ABD4A-5B6F-499D-AAFC-999721BB0F55}"
-      DTS:From="Package\Insert Inferred Member"
+      DTS:From="Package\Insert Unkown Member"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Get Modified Date" />
@@ -745,45 +745,53 @@ where (ea.ModifiedDate &gt; ?
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Data Flow Task"
-          TopLeft="209.285717849829,334.941181168012" />
+          TopLeft="215.714289387878,310.470592589527" />
         <NodeLayout
           Size="163.2,41.6"
           Id="Package\Get Modified Date"
-          TopLeft="110.714287599739,165.176472904773" />
+          TopLeft="117.142859137788,140.705884326288" />
         <NodeLayout
           Size="188.8,41.6"
-          Id="Package\Insert Inferred Member"
+          Id="Package\Insert Unkown Member"
           TopLeft="77.8571441830422,71.1176480562217" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Merge Customer"
+          TopLeft="226.428575284627,402.235299758845" />
         <NodeLayout
           Size="150.4,41.6"
           Id="Package\Truncate Stage"
-          TopLeft="157.142859818984,259.235297753324" />
+          TopLeft="163.571431357033,234.764709174839" />
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Update Modified Date"
+          TopLeft="297.85714792962,473.858829771194" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="172.257144183042,112.717648056222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.0571434166969,52.4588248485516"
+              EndConnector="26.4857149547461,27.9882362700664"
               Start="0,0"
-              End="20.0571434166969,44.9588248485516">
+              End="26.4857149547461,20.4882362700664">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,22.2294124242758" />
+                    End="0,9.99411813503322" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,22.2294124242758"
-                    Point2="0,26.2294124242758"
-                    Point3="4,26.2294124242758" />
+                    Point1="0,9.99411813503322"
+                    Point2="0,13.9941181350332"
+                    Point3="4,13.9941181350332" />
                   <mssgle:LineSegment
-                    End="16.0571434166969,26.2294124242758" />
+                    End="22.4857149547461,13.9941181350332" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.0571434166969,26.2294124242758"
-                    Point2="20.0571434166969,26.2294124242758"
-                    Point3="20.0571434166969,30.2294124242758" />
+                    Point1="22.4857149547461,13.9941181350332"
+                    Point2="26.4857149547461,13.9941181350332"
+                    Point3="26.4857149547461,17.9941181350332" />
                   <mssgle:LineSegment
-                    End="20.0571434166969,44.9588248485516" />
+                    End="26.4857149547461,20.4882362700664" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -794,7 +802,7 @@ where (ea.ModifiedDate &gt; ?
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="192.314287599739,206.776472904773">
+          TopLeft="198.742859137788,182.305884326288">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -828,7 +836,7 @@ where (ea.ModifiedDate &gt; ?
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="232.342859818984,300.835297753324">
+          TopLeft="238.771431357033,276.364709174839">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -860,13 +868,9 @@ where (ea.ModifiedDate &gt; ?
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,41.6"
-          Id="Package\Merge Customer"
-          TopLeft="220.000003746578,426.70588833733" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="284.485717849829,376.541181168012">
+          TopLeft="290.914289387878,352.070592589527">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -898,13 +902,9 @@ where (ea.ModifiedDate &gt; ?
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="180,41.6"
-          Id="Package\Update Modified Date"
-          TopLeft="291.428576391571,498.329418349679" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="298.000003746578,468.30588833733">
+          TopLeft="304.428575284627,443.835299758845">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -945,13 +945,13 @@ where (ea.ModifiedDate &gt; ?
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149.6,41.6"
-          Id="Package\Data Flow Task\OLE DB Source"
-          TopLeft="125.000002128737,94.0588248485513" />
-        <NodeLayout
           Size="170.4,41.6"
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="159.285716998334,315.058827947993" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="125.000002128737,94.0588248485513" />
         <NodeLayout
           Size="152.8,41.6"
           Id="Package\Data Flow Task\Derived Column"
@@ -962,26 +962,26 @@ where (ea.ModifiedDate &gt; ?
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="53.0285723043953,57.0470602070172"
+              EndConnector="53.028572304395,57.0470602070167"
               Start="0,0"
-              End="53.0285723043953,49.5470602070172">
+              End="53.028572304395,49.5470602070167">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5235301035086" />
+                    End="0,24.5235301035083" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.5235301035086"
-                    Point2="0,28.5235301035086"
-                    Point3="4,28.5235301035086" />
+                    Point1="0,24.5235301035083"
+                    Point2="0,28.5235301035083"
+                    Point3="4,28.5235301035083" />
                   <mssgle:LineSegment
-                    End="49.0285723043953,28.5235301035086" />
+                    End="49.028572304395,28.5235301035083" />
                   <mssgle:CubicBezierSegment
-                    Point1="49.0285723043953,28.5235301035086"
-                    Point2="53.0285723043953,28.5235301035086"
-                    Point3="53.0285723043953,32.5235301035086" />
+                    Point1="49.028572304395,28.5235301035083"
+                    Point2="53.028572304395,28.5235301035083"
+                    Point3="53.028572304395,32.5235301035083" />
                   <mssgle:LineSegment
-                    End="53.0285723043953,49.5470602070172" />
+                    End="53.028572304395,49.5470602070167" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1028,14 +1028,6 @@ where (ea.ModifiedDate &gt; ?
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
@@ -1045,6 +1037,14 @@ where (ea.ModifiedDate &gt; ?
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

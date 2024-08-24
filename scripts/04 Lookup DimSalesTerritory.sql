@@ -1,0 +1,2 @@
+select SalesTerritoryAK
+from DimSalesTerritory

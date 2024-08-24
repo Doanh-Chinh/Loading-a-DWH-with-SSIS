@@ -1,0 +1,4 @@
+ISNULL(ProductSubCategoryName) ? "" : ProductSubCategoryName
+ISNULL(ProductCategoryName) ? "" : ProductCategoryName
+ISNULL(Color) ? "" : Color
+ISNULL(ProductModelName) ? "" : ProductModelName
