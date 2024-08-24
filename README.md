@@ -8,8 +8,25 @@ Data source can be downloaded from here! [AdventureWorks2019.bak](https://github
 
 ![Screenshot](data-mapping/InternetSales_Diagram.png)
 
+<p align="center">Internet Sales Diagram of the Project</p>
+
 ## Data Mapping 
+The source-target of dimension and fact tables are predefined. For instances, DimCustomer is defined as figure below:
+
 ![Screenshot](data-mapping/CustomerMapping.png)
 
 <p align="center"> Mapping Customer Source and Customer Destination (DimCustomer) </p>
 
+## Data Modelling
+### Create Dimension and Fact Tables
+![Screenshot](figures/CreateFactScript.png)
+
+<p align="center">Initial Fact Table Script</p>
+
+### Set Primary and Foreign Constraints 
+- Eg: set primary key for `DimPromotion`
+
+``` diff
+- ALTER TABLE DimPromotion 
+- ADD CONSTRAINT PK_DimPromotion PRIMARY KEY (PromotionKey);
+```
