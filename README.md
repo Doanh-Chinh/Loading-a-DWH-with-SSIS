@@ -69,7 +69,7 @@ When utilizing lookup components in this manner, you must make sure that, under 
 <p align="center">DimCustomer Records</p>
 
 ### Load Fact Table
-![Screenshot](figures/FactInternetSalesDF.png.png)
+![Screenshot](figures/FactInternetSalesDF.png)
 
 <p align="center">Set up Data Flow for FactInternetSales ETL Process</p>
 
