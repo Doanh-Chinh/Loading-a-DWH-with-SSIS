@@ -50,8 +50,8 @@ To solve the issue Early arriving facts or Late arriving dimensions, we inserted
 When utilizing lookup components in this manner, you must make sure that, under the General tab of the lookup component, you choose the “Ignore Failure” option for handling rows that have no matching entries.  This implies that records will keep passing through the "Lookup Match Output" if they don't find a match in the dimension.  
 
 **For more about Unknown Member:**
-- [(1)](https://www.youtube.com/watch?v=weNidVsI6WQ)
-- [(2)](https://bidesign.uk/data-warehousing-tip-6/)
+- [(1) LeapFrogBI](https://www.youtube.com/watch?v=weNidVsI6WQ)
+- [(2) bidesign.uk](https://bidesign.uk/data-warehousing-tip-6/)
 
 ### Load Dimension Tables
 **Reffering to `scripts` folder.**
